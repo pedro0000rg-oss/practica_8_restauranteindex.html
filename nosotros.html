@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Nosotros - El Sabor del Fogón</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fffaf0;
+        }
+
+        /* --- Menú de Navegación --- */
+        nav {
+            background-color: #8b0000;
+            width: 100%;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* --- Título con Marquesina --- */
+        marquee {
+            width: 100%;
+        }
+
+        .titulo-seccion {
+            color: #8b0000;
+            text-transform: uppercase;
+        }
+
+        /* --- Contenedor de Contenido --- */
+        .nosotros-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            max-width: 800px;
+            padding: 20px 0;
+        }
+
+        .tarjeta-info {
+            background: white;
+            margin: 20px 0;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .tarjeta-info h2 {
+            color: #8b0000;
+            margin-top: 0;
+        }
+
+        .tarjeta-info p {
+            color: #444;
+            font-size: 1.1rem;
+        }
+
+        .imagen-nosotros {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="inicio.html">Inicio</a>
+    <a href="servicio.html">Servicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="contactos.html">Contactos</a>
+</nav>
+
+<marquee direction="left" bgcolor="yellow">
+    <h1 class="titulo-seccion">Conoce nuestra historia y nuestra pasión por la cocina</h1>
+</marquee>
+
+<div class="nosotros-container">
+
+    <img src="imagen_nosotros.jpg" alt="Nuestro Equipo" class="imagen-nosotros">
+
+    <div class="tarjeta-info">
+        <h2>Nuestra Historia</h2>
+        <p>
+            Fundado en 1995, <strong>"El Sabor del Fogón"</strong> nació como un pequeño sueño familiar en el corazón de la ciudad. 
+            Con recetas transmitidas de generación en generación, empezamos con solo tres mesas y mucha ilusión. 
+            Hoy, nos enorgullece ser un referente de la gastronomía local, manteniendo siempre el toque casero que nos caracteriza.
+        </p>
+    </div>
+
+    <div class="tarjeta-info">
+        <h2>Nuestra Misión</h2>
+        <p>
+            Ofrecer a nuestros clientes una experiencia culinaria inolvidable, combinando ingredientes frescos de la región 
+            con un servicio cálido que los haga sentir como en casa.
+        </p>
+    </div>
+
+    <div class="tarjeta-info">
+        <h2>Valores</h2>
+        <p>✨ Calidad en cada ingrediente.</p>
+        <p>🤝 Honestidad y respeto por el cliente.</p>
+        <p>👨‍🍳 Pasión por la cocina tradicional.</p>
+    </div>
+
+</div>
+
+</body>
+</html>

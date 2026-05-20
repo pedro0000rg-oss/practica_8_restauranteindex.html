@@ -1,0 +1,66 @@
+cd <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Sitio Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #f2a900;
+        }
+        .contenido {
+            padding: 20px;
+            text-align: center; /* Centra todo el contenido */
+        }
+        .imagen-bienvenida {
+            margin-top: 20px; /* Espacio arriba de la imagen */
+            max-width: 80%; /* Para que no se salga de la pantalla */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#">Menú</a></li>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="servicio.html">Servicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+        </ul>
+
+</nav>
+
+    <div class="contenido">
+        <h1>Bienvenido a mi sitio web</h1>
+        <p>Selecciona una opción del menú para navegar.</p>
+        
+        <!-- Imagen centrada -->
+        <img src="bienvenido.jpg" alt="Bienvenido" class="imagen-bienvenida">
+    </div>
+
+</body>
+</html>

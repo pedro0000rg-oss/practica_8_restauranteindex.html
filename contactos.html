@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contactos - El Sabor del Fogón</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fffaf0;
+        }
+
+        /* --- Menú de Navegación --- */
+        nav {
+            background-color: #8b0000;
+            width: 100%;
+            padding: 15px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li { margin: 0 20px; }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* --- Título con Marquesina --- */
+        marquee {
+            width: 100%;
+        }
+
+        .titulo-seccion {
+            color: #8b0000;
+            text-transform: uppercase;
+        }
+
+        /* --- Contenedor de Contactos --- */
+        .contactos-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            max-width: 700px;
+            padding: 20px 0;
+        }
+
+        .contacto-item {
+            margin: 15px 0;
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .contacto-item h3 {
+            margin-top: 0;
+            color: #8b0000;
+        }
+
+        /* --- Estilos del Formulario --- */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: left;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #8b0000;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #a00000;
+        }
+
+        .btn-whatsapp {
+            background-color: #25d366;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* --- Mapa responsivo --- */
+        .map-container {
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="servicio.html">Servicios</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contactos.html">Contacto</a></li>
+    </ul>
+</nav>
+
+<marquee direction="left" bgcolor="yellow">
+    <h1 class="titulo-seccion">Ponte en contacto con nosotros - ¡Estamos para servirte!</h1>
+</marquee>
+
+<div class="contactos-container">
+
+    <div class="contacto-item">
+        <h3>WhatsApp Directo</h3>
+        <p>Haz tus pedidos o reservaciones por chat:</p>
+        <a href="https://wa.me/7551716755" class="btn-whatsapp" target="_blank">
+            Enviar mensaje por WhatsApp
+        </a>
+    </div>
+
+    <div class="contacto-item">
+        <h3>Envíanos un mensaje</h3>
+        <form action="#">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." required>
+            
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?"></textarea>
+            
+            <button type="submit">Enviar Formulario</button>
+        </form>
+    </div>
+
+    <div class="contacto-item">
+        <h3>Nuestra Ubicación</h3>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.484439167191!2d-99.1674886!3d19.4270206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35fbd12f57%3A0x71405d485a475d18!2sÁngel%20de%20la%20Independencia!5e0!3m2!1ses-419!2smx!4v1700000000000!5m2!1ses-419!2smx" 
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+        <p>Av. Principal #123, Colonia Centro, CDMX.</p>
+    </div>
+
+</div>
+
+</body>
+</html>

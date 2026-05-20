@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - El Sabor del Fogón</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fffaf0;
+            color: #333;
+        }
+
+        /* --- Navegación --- */
+        nav {
+            background-color: #8b0000;
+            width: 100%;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* --- Sección de Bienvenida (Hero) --- */
+        .hero {
+            width: 100%;
+            height: 450px;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        /* --- Marquesina --- */
+        marquee {
+            width: 100%;
+            background-color: #ffcc00;
+            padding: 10px 0;
+            font-weight: bold;
+            color: #8b0000;
+        }
+
+        /* --- Contenido Principal --- */
+        .main-content {
+            max-width: 900px;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .btn-menu {
+            display: inline-block;
+            background-color: #8b0000;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        .btn-menu:hover {
+            background-color: #a00000;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        .feature-box {
+            width: 250px;
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="inicio.html">Inicio</a>
+    <a href="servicio.html">Servicios</a>
+    <a href="productos.html">Productos</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="contactos.html">Contactos</a>
+</nav>
+
+<header class="hero">
+    <h1>El Sabor del Fogón</h1>
+    <p>Donde cada bocado cuenta una historia</p>
+    <a href="productos.html" class="btn-menu">Ver Menú del Día</a>
+</header>
+
+<marquee direction="left">
+    ¡PROMOCIÓN DE HOY: 2x1 en postres caseros! • Abierto todos los días de 9:00 AM a 10:00 PM • ¡Te esperamos!
+</marquee>
+
+<div class="main-content">
+    <h2>Bienvenidos a nuestra mesa</h2>
+    <p>En <strong>El Sabor del Fogón</strong>, nos apasiona cocinar con alma. Utilizamos ingredientes frescos y técnicas tradicionales para llevar a tu mesa el sabor auténtico que tanto te gusta.</p>
+
+    <div class="features">
+        <div class="feature-box">
+            <h3>Fresh Ingredients</h3>
+            <p>Compramos directo a productores locales cada mañana.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Recetas Únicas</h3>
+            <p>Secretos familiares que han pasado de mano en mano.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Ambiente Familiar</h3>
+            <p>El lugar perfecto para crear recuerdos inolvidables.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
